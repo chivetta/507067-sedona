@@ -7,29 +7,28 @@
   <body>
 
     <header class="page-header">
-        <a class="logo" href="./index.html">
-          <img class="logo__logo-pic" src="" width="102" height="83" alt="Sedona">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="content-list">
-              <li class="content-list__item"><a class="content-list__link" href="./index.html">Главная</a></li>
-              <li class="content-list__item"><a class="content-list__link" href="./photo.html">Фото и видео</a></li>
-              <li class="content-list__item content-list__item--active">Форма отзыва</li>
-              <li class="content-list__item"><a class="content-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-            </ul>
-          </div>
-        </nav>
+      <a class="page-header__logo" href="./index.html">
+        <img class="page-header__logotype-picture" src="http://via.placeholder.com/102x83" width="102" height="83" alt="Sedona">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">&#8801;</button>
+        <div class="main-nav__wrapper">
+          <ul class="content-list">
+            <li class="content-list__item"><a class="content-list__link" href="./index.html">Главная</a></li>
+            <li class="content-list__item content-list__item--active">Фото и видео</li>
+            <li class="content-list__item"><a class="content-list__link" href="./form.html">Форма отзыва</a></li>
+            <li class="content-list__item"><a class="content-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <main>
+    <main class="container">
       <section class="intro">
         <div class="intro__slogan">
-          <div class="intro__slogan-sedona">Sedona</div>
         </div>
         <div class="intro__description">
-          <h2 class="intro__description-title">Оставьте свой отзыв</h2>
+          <h1 class="intro__description-title">Оставьте свой отзыв</h1>
           <p class="intro__description-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
@@ -39,15 +38,15 @@
           <h2 class="fullname__title">Представьтесь:</h2>
           <div class="fullname__item">
             <label for="Name">Имя: </label>
-            <input type="text" id="Name" name="name" value="Петр" required>
+            <input type="text" id="Name" name="name" placeholder="Петр" required>
           </div>
           <div class="fullname__item">
             <label for="Surname">Фамилия: </label>
-            <input type="text" id="Surname" name="surname" value="Иванов" required>
+            <input type="text" id="Surname" name="surname" placeholder="Иванов" required>
           </div>
           <div class="fullname__item">
             <label for="Patronymic">Отчество: </label>
-            <input type="text" id="Patronymic" name="patronymic" value="Александрович">
+            <input type="text" id="Patronymic" name="patronymic" placeholder="Александрович">
           </div>
         </div>
 
@@ -55,11 +54,11 @@
           <h2 class="contact-info__title">Контактная информация:</h2>
           <div class="contact-info__item">
             <label for="Phone">Контактный телефон: </label>
-            <input type="tel" id="Phone" name="tel" value="Введите телефон" required>
+            <input type="tel" id="Phone" name="tel" placeholder="Введите телефон" required>
           </div>
           <div class="contact-info__item">
             <label for="Email">Электронная почта: </label>
-            <input type="email" id="Email" name="email" value="Введите e-mail" required>
+            <input type="email" id="Email" name="email" placeholder="Введите e-mail" required>
             </div>
         </div>
 
@@ -102,14 +101,14 @@
 
     <footer class="page-footer">
       <div class="page-footer__hashtag">
-        <h1 class="page-footer__hashtag-text">#visitSEDONA</h1>
+        <h2 class="page-footer__hashtag-text">#visitsedona</h2>
       </div>
-      <div class="page-footer__social">
-        <a class="social-link social-twitter" href="https://twitter.com/htmlacademy_ru">Twitter</a>
-        <a class="social-link social-facebook" href="https://facebook.com/htmlacademy">Facebook</a>
-        <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+      <div class="social">
+        <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Twitter</a>
+        <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">Facebook</a>
+        <a class="social__linklink social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
       </div>
-      <div class="page-footer__copyright">Разработано <a class="html-logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="" width="27" height="34" alt="HTML Academy"></a></div>
+      <div class="page-footer__copyright">Разработано <a class="html-logotype" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy"></a></div>
     </footer>
   </body>
 </html>
