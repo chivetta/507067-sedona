@@ -1,0 +1,33 @@
+.content-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: @bg-color;
+}
+
+.content-list__link,
+.content-list__item--active {
+  display: block;
+  vertical-align: middle;
+  width: auto;
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  color: @text--light;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+}
+
+.content-list__link:hover {
+  background-color: @bg-color--hover;
+  border-top: 1px solid #86b2cd;
+}
+
+.content-list__link:active {
+  color: @text--active;
+  background-color: @bg-color--active;
+  border-top: 1px solid #77acca;
+}

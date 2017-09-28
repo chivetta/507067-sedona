@@ -1,0 +1,39 @@
+/*шрифты*/
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("./fonts/ptsans.woff") format("woff"),
+       url("./fonts/ptsans.woff2") format("woff2"),
+       url("./fonts/ptsansbold.woff") format("woff"),
+       url("./fonts/ptsansbold.woff2") format("woff2");
+}
+
+/*body*/
+
+body {
+  min-width: 320px;
+  margin: 0px;
+  padding: 0px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-align: center;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/*импорт*/
+
+@import "./less/variables.less";
+@import "./less/mixin.less";
+@import "./less/header.less";
+@import "./less/intro.less";
+@import "./less/features.less";
+@import "./less/find-hotel.less";
+@import "./less/sedona-map.less";
+@import "./less/album.less";
+@import "./less/presentation.less";
+@import "./less/review-form.less";
+@import "./less/footer.less";

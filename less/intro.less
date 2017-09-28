@@ -1,0 +1,29 @@
+.intro__slogan {
+  width: auto;
+  height: 389px;
+  padding: 0;
+  background-color: @bg-color;
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom, center;
+  background-size: cover, cover;
+}
+
+.intro__slogan-text {
+  padding: 75px 20px;
+  height: 239px;
+  background-position: center;
+  background-size: contain;
+  background-origin: content-box;
+}
+
+.intro__description {
+  margin-top: 15px;
+  padding: 20px;
+  &-title {
+    .text-title();
+  }
+  &-text {
+    .text-paragraph-label();
+  }
+}
