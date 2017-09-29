@@ -1,0 +1,61 @@
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.album__post {
+  display: block;
+  padding: 22px 20px;
+  border-top: 1px solid @bg-color__disabled;
+}
+
+.album__post:last-of-type {
+  border-bottom: 1px solid @bg-color__disabled;
+}
+
+.photo {
+  width: 280px;
+  height: 280px;
+}
+
+.photo-description {
+  position: relative;
+  text-align: left;
+}
+
+.photo-description__title {
+  margin-bottom: 0;
+  font-weight: bold;
+  .text-paragraph;
+}
+
+.photo-description__author {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-transform: none;
+  .text-paragraph;
+}
+
+.photo-description__like {
+  padding-left: 37px;
+  font-weight: bold;
+  .text-paragraph;
+}
+
+.photo-description__like::before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+}
