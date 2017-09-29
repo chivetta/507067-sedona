@@ -1,29 +1,42 @@
 .intro__slogan {
   width: auto;
-  height: 389px;
-  padding: 0;
+  height: auto;
+  padding: 50px 20px;
   background-color: @bg-color;
-  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-image: @bg-triangle-intro, @bg-image;
   background-repeat: no-repeat;
   background-position: bottom, center;
   background-size: cover, cover;
 }
 
-.intro__slogan-text {
-  padding: 75px 20px;
-  height: 239px;
-  background-position: center;
-  background-size: contain;
-  background-origin: content-box;
+.intro__slogan {
+  &--welcome {
+    margin: 35px auto;
+    width: 280px;
+    height: 215px;
+    background-image: @bg-image-text;
+    .bg-intro;
+  }
+  &--sedona {
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 280px;
+    height: 40px;
+    background-image: @bg-image-sedona;
+    .bg-intro;
+  }
 }
 
 .intro__description {
-  margin-top: 15px;
   padding: 20px;
-  &-title {
-    .text-title();
-  }
-  &-text {
-    .text-paragraph-label();
-  }
+}
+
+.intro__description-title {
+  .text-title();
+  color: @text--title;
+}
+
+.intro__description-text {
+  .text-paragraph-label();
 }
