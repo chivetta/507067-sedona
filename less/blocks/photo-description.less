@@ -1,0 +1,35 @@
+.photo-description {
+  position: relative;
+  text-align: left;
+}
+
+.photo-description__title {
+  margin-bottom: 0;
+  font-weight: bold;
+  .text-paragraph;
+}
+
+.photo-description__author {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-transform: none;
+  .text-paragraph;
+}
+
+.photo-description__like {
+  padding-left: 37px;
+  font-weight: bold;
+  .text-paragraph;
+}
+
+.photo-description__like::before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+}
