@@ -34,17 +34,11 @@
   border-bottom: 1px solid darken(@bg-color--additional; 9.5%);
 }
 
-
-.feature__title {
-  .text-title;
-}
-
-.feature__number {
-  .text-paragraph-label;
-}
-
-.feature__text {
-  .text-paragraph-label;
+.feature-photo {
+  width: 320px;
+  height: 260px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .feature-list {
@@ -55,22 +49,54 @@
 }
 
 .feature-list__item {
+  position: relative;
+  padding-top: 20px;
   padding-left: 50px;
   text-align: left;
 }
 
-.feature-list__item::before {
+.feature-list__item--home::before {
   content: "";
   position: absolute;
-  left: 20px;
+  top: 10px;
+  left: 1px;
   width: 40px;
   height: 40px;
   background-color: @bg-color;
+  background-image: url(./img/icon-house.svg);
 }
 
-.feature-photo {
-  width: 320px;
-  height: 260px;
-  margin-right: auto;
-  margin-left: auto;
+.feature-list__item--souvenir::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 1px;
+  width: 40px;
+  height: 40px;
+  background-color: @bg-color;
+  background-image: url(./img/icon-gift.svg);
+}
+
+.feature-list__item--food::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 1px;
+  width: 40px;
+  height: 40px;
+  background-color: @bg-color;
+  background-image: url(./img/icon-burger.svg);
+}
+
+.feature__title {
+  margin: 0;
+  .text-title;
+}
+
+.feature__number {
+  .text-paragraph-label;
+}
+
+.feature__text {
+  .text-paragraph-label;
 }

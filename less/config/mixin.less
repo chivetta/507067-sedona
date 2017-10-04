@@ -28,15 +28,13 @@
 }
 
 .buttn-style() {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
   color: @text--light;
   background-color: @bg-color;
   border: none;
-}
-
-.link-image() {
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: contain;
 }
 
 .form-section {
@@ -52,4 +50,11 @@
   background-color: @bg-color__form;
   border: none;
   .text-title
+}
+
+.placeholder {
+  &::-webkit-input-placeholder {color: #000000;}
+  &:-moz-placeholder {color: #000000;}
+  &::-moz-placeholder {color: #000000;}
+  &:-ms-input-placeholder {color: #000000;}
 }
