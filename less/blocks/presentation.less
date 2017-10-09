@@ -1,5 +1,11 @@
+.presentation {
+  padding: 20px 0;
+}
+
 .presentation__description {
-  padding: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .presentation__title {
@@ -12,25 +18,73 @@
 }
 
 .presentation__video {
-  padding-bottom: 40px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.presentation__video--window {
+  width: 320px;
+  height: 200px;
 }
 
 .presentation__controls {
-  display: block;
-  width: 280px;
-  height: 20px;
-  margin-top: -5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 120px;
+  height: 111px;
   margin-left: auto;
   margin-right: auto;
-  padding: 23px;
+  padding: 0 80px;
   background-color: @bg-color__form;
 }
 
 .presentation__controls-button {
-  display: inline-block;
   height: 20px;
-  margin: 0 30px;
   padding: 0;
-  background-color: @bg-color__form;
+  background-color: transparent;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .presentation__video {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .presentation__video--window {
+    width: 648px;
+    height: 500px;
+    background-color: #000000;
+  }
+
+  .presentation__controls {
+    align-items: center;
+    width: 648px;
+    height: 90px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .presentation__controls-button--replay,
+  .presentation__controls-button--subtitles,
+  .presentation__controls-button--fullscreen {
+    fill: @text--light;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation__video {
+    margin: 0 200px;
+  }
+
+  .presentation__video--window {
+    width: 800px;
+    height: 500px;
+  }
+
+  .presentation__controls {
+    width: 800px;
+  }
 }

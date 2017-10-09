@@ -1,0 +1,134 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.page-header__logotype {
+  height: 83px;
+  background-color: transparent;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  background-color: darkgray;
+}
+
+.main-nav__wrapper {
+  background-color: @bg-color;
+}
+
+.main-nav__toggle {
+  order: 1;
+}
+
+.content-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.content-list__link,
+.content-list__item--active {
+  display: block;
+  vertical-align: middle;
+  width: auto;
+  padding: 5px 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  color: @text--light;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+}
+
+.content-list__link:hover {
+  background-color: @bg-color--hover;
+  border-top: 1px solid #86b2cd;
+}
+
+.content-list__link:active {
+  color: @text--active;
+  background-color: @bg-color--active;
+  border-top: 1px solid #77acca;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: 768px;
+  }
+
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: @bg-menu;
+  }
+
+  .content-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: @tablet-width;
+    max-height: 56px;
+  }
+
+  .content-list__link,
+  .content-list__item--active {
+    color: @text--title;
+    border: none;
+  }
+
+  .content-list__link:hover {
+    color: #81b3d2;
+    background-color: transparent;
+    border: none;
+  }
+
+  .content-list__link:active {
+    color: #cacaca;
+    background-color: transparent;
+    border: none;
+  }
+
+  .content-list__item--active:hover {
+    color: #604e43;
+    background-color: transparent;
+    border: none;
+  }
+
+  .content-list__item--active:active {
+    color: #dbd8d5;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
+
+  .page-header__logotype {
+    height: 96px;
+  }
+
+  .content-list {
+    width: 1200px;
+  }
+}
