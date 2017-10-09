@@ -11,10 +11,16 @@
 }
 
 .find-hotel__button {
-  width: 280px;
+  width-min: 280px;
   height: 58px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 40px;
   .buttn-style;
+}
+
+@media (min-width: @tablet-width) {
+  .find-hotel__button {
+    width: 458px;
+  }
 }
