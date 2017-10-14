@@ -1,3 +1,5 @@
+/*Поиск отеля*/
+
 .find-hotel__description {
   padding: 20px;
 }
@@ -7,7 +9,11 @@
 }
 
 .find-hotel__text {
-  .text-paragraph;
+  .text-description;
+}
+
+.find-hotel__button--disable {
+  .button-disable;
 }
 
 .find-hotel__button {
@@ -16,11 +22,56 @@
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 40px;
-  .buttn-style;
+  outline: none;
+  .button-style;
+}
+
+.find-hotel__button:hover {
+  .button-hover;
+}
+
+.find-hotel__button:active {
+  .button-active;
 }
 
 @media (min-width: @tablet-width) {
+  .find-hotel {
+    padding: 55px 155px;
+  }
+
+  .find-hotel__description {
+    padding: 0px;
+  }
+
+  .find-hotel__title {
+    margin-top: 0;
+    margin-bottom: 34px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .find-hotel__text {
+    margin-bottom: 40px;
+  }
+
   .find-hotel__button {
     width: 458px;
+    margin: 0;
   }
 }
+@media (min-width: @desktop-width) {
+  .find-hotel {
+    padding-bottom: 65px;
+    padding-left: 370px;
+    padding-right: 370px;
+  }
+
+  .find-hotel__title {
+    margin-bottom: 32px;
+  }
+
+  .find-hotel__text {
+    margin-bottom: 45px;
+  }
+}
+

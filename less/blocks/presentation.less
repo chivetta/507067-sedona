@@ -1,6 +1,10 @@
+/*Видеопрезентация*/
+
 .presentation {
   padding: 20px 0;
 }
+
+/*Описание презентации*/
 
 .presentation__description {
   padding-bottom: 20px;
@@ -14,8 +18,10 @@
 }
 
 .presentation__text {
-  .text-paragraph;
+  .text-description;
 }
+
+/*Видео*/
 
 .presentation__video {
   height: auto;
@@ -27,6 +33,8 @@
   height: 200px;
 }
 
+/*Контроллеры*/
+
 .presentation__controls {
   display: flex;
   flex-direction: row;
@@ -37,7 +45,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0 80px;
-  background-color: @bg-color__form;
+  background-color: @light-grey;
 }
 
 .presentation__controls-button {
@@ -56,7 +64,7 @@
   .presentation__video--window {
     width: 648px;
     height: 500px;
-    background-color: #000000;
+    background-color: @black;
   }
 
   .presentation__controls {
@@ -64,13 +72,13 @@
     width: 648px;
     height: 90px;
     padding: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: @transparent-black;
   }
 
   .presentation__controls-button--replay,
   .presentation__controls-button--subtitles,
   .presentation__controls-button--fullscreen {
-    fill: @text--light;
+    fill: @white;
   }
 }
 

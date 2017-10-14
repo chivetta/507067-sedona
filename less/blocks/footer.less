@@ -1,3 +1,6 @@
+/*Подвал*/
+/*Общие настройки*/
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -6,16 +9,21 @@
   width: 320px;
   margin: 0 auto;
   padding: 20px 0;
-  background-color: @bg-menu;
+  background-color: @white;
 }
+
+/*Хештег*/
 
 .footer__hashtag-text {
   margin: 20px;
   .text-big-title;
 }
 
+/*Ссылки на соцсети*/
+
 .footer__social {
   margin: 20px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +34,7 @@
   height: 48px;
   margin-right: 6px;
   font-size: 0;
-  background-color: @bg-color;
+  background-color: @main-blue;
 
   &:nth-of-type(3) {
     margin-right: 0;
@@ -36,68 +44,98 @@
 .footer__social-link--twitter,
 .footer__social-link--youtube {
   margin-top: 17px;
-  fill: @text--light;
+  fill: @white;
 }
 
 .footer__social-link--facebook {
   margin-top: 14px;
-  fill: @text--light;
+  fill: @white;
 }
 
 .footer__social-link:hover {
-  background-color: @bg-color--hover;
+  background-color: @middle-blue;
 }
 
 .footer__social-link:active {
-  background-color: @bg-color--active;
+  background-color: @dark-blue;
 
-  .footer__social-link--twitter {
-    fill: @color--active;
-  }
-
-  .footer__social-link--facebook {
-    fill: @color--active;
-  }
-
+  .footer__social-link--twitter,
+  .footer__social-link--facebook,
   .footer__social-link--youtube {
-    fill: @color--active;
+    fill: #88b6d1;
   }
 }
 
-.footer__copyright,
-.footer__logotype {
-  display: inline-block;
-  vertical-align: middle;
-  .text-paragraph-label;
+/*Копирайт*/
+
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__copyright span {
+  .text-label;
 }
 
 .footer__logotype--icon {
   width: 27px;
   height: 34px;
-  fill: @text--title;
+  margin-left: 10px;
+  fill: @black;
 }
 
 .footer__logotype--icon:hover {
-  fill: @color-logo--hover;
+  fill: @main-blue;
 }
 
 .footer__logotype--icon:active {
-  fill: @color-like-icon;
+  fill: @middle-grey;
 }
 
 @media (min-width: @tablet-width) {
   .footer {
     flex-direction: row;
     width: 768px;
+    padding: 27px 0;
+  }
+
+  .footer__hashtag {
+    width: 256px;
   }
 
   .footer__social {
     flex-direction: row;
+    justify-content: center;
+    width: 256px;
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .footer__copyright {
+    width: 256px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .footer {
     width: 1200px;
+  }
+
+  .footer__hashtag {
+    width: 400px;
+  }
+
+  .footer__social {
+    width: 400px;
+  }
+
+  .footer__copyright {
+    width: 400px;
+    justify-content: flex-end;
+  }
+
+  .footer__logotype--icon {
+    margin-right: 44px;
   }
 }

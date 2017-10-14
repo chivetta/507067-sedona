@@ -1,10 +1,13 @@
+/*Интро*/
+/*Фоновое изображение*/
+
 .intro__slogan {
   width: auto;
   height: auto;
   padding-top: 50px;
   padding-bottom: 65px;
-  background-color: @bg-color;
-  background-image: @bg-triangle-intro, @bg-image;
+  background-color: @main-blue;
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom, center;
   background-size: cover, cover;
@@ -17,7 +20,7 @@
   margin-left: auto;
   min-width: 280px;
   min-height: 214px;
-  background-image: @bg-image-text;
+  background-image: url("../img/text-sedona-index.svg");
   .bg-intro;
 }
 
@@ -26,28 +29,39 @@
   margin-left: auto;
   width: 230px;
   height: 40px;
-  background-image: @bg-image-sedona;
+  background-image: url("../img/text-sedona.svg");
   .bg-intro;
 }
 
+/*Заголовок*/
+
 .intro__description {
-  padding: 30px 20px 10px 20px;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 4px;
 }
 
 .intro__description-title {
-  .text-title();
-  color: @text--title;
+  margin-bottom: 30px;
+  color: @black;
+  .text-title;
 }
 
 .intro__description-text {
-  .text-paragraph-label();
+  margin: 0;
+  .text-label;
 }
 
 @media (min-width: @tablet-width) {
+  .intro  {
+    padding-bottom: 20px;
+  }
+
   .intro__slogan--welcome {
     min-width: 460px;
     min-height: 350px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 25px;
   }
 
@@ -59,6 +73,18 @@
   }
 
   .intro__description {
-    padding: 30px;
+    padding: 30px 120px;
+    margin-bottom: 0;
+  }
+
+  .intro__description-title {
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro__description {
+    padding: 30px 280px;
   }
 }
