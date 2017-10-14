@@ -128,6 +128,7 @@
 
 @media (min-width: @tablet-width) {
   .feature__title {
+    padding: 0 5px;
     font-size: 21px;
     line-height: 26px;
   }
@@ -135,7 +136,7 @@
   .feature--main .feature__item,
   .feature--additional .feature__item {
     width: 166px;
-    padding: 32px 45px;
+    padding: 0px 45px;
     margin: 0;
   }
 
@@ -170,11 +171,15 @@
 
   .feature-list__item {
     width: 166px;
-    padding-top: 140px;
+    padding-top: 130px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     text-align: center;
+  }
+
+  .feature-list__item .feature__title {
+    margin-bottom: 20px;
   }
 
   .feature-list__item--souvenir {
@@ -195,10 +200,41 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    min-height: 256px;
     padding: 0;
   }
 
   .feature--additional .feature__item:not(:last-of-type) {
     border-bottom: none;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .feature__title {
+    padding: 0 60px;
+  }
+
+  .feature--main .feature__item,
+  .feature--additional .feature__item {
+    width: 280px;
+    padding: 0px 60px;
+  }
+
+  .feature-list__item {
+    width: 290px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 40px;
+  }
+
+  .feature-list__item--home::before,
+  .feature-list__item--souvenir::before,
+  .feature-list__item--food::before {
+    top: 36px;
+    left: 161px;
+    width: 77px;
+    height: 77px;
+    background-size: 77px 77px;
+  }
+
 }
