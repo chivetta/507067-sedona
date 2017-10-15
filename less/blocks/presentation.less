@@ -14,85 +14,149 @@
 
 .presentation__title {
   .text-title;
+  margin-top: 12px;
   margin-bottom: 25px;
 }
 
 .presentation__text {
+  padding: 0 10px;
   .text-description;
 }
 
 /*Видео*/
 
 .presentation__video {
-  height: auto;
-  margin: 0 auto;
-}
-
-.presentation__video--window {
+  position: relative;
   width: 320px;
-  height: 200px;
+  height: 201px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 90px;
+  background-color: @middle-grey;
+  background-image: url(../img/video-mobile@1x.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*Контроллеры*/
 
 .presentation__controls {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 120px;
+  position: absolute;
+  left: 50%;
+  bottom: -66px;
+  transform: translateX(-50%);
+  width: 280px;
   height: 111px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 80px;
+  background-color: @transparent-black;
+}
+
+.presentation__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+}
+
+.presentation__input--range {
+  width: 236px;
+}
+
+.presentation__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+  padding: 0 20px;
   background-color: @light-grey;
 }
 
-.presentation__controls-button {
+.presentation__button {
   height: 20px;
-  padding: 0;
   background-color: transparent;
   border: none;
 }
 
+.presentation__button:first-of-type {
+  margin-right: 100px;
+}
+
 @media (min-width: @tablet-width) {
-  .presentation__video {
-    margin-left: 60px;
-    margin-right: 60px;
+  .presentation__description {
+    padding-top: 40px;
+    padding-bottom: 54px;
+    padding-left: 160px;
+    padding-right: 160px;
   }
 
-  .presentation__video--window {
+  .presentation__title--big {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .presentation__video {
     width: 648px;
     height: 500px;
-    background-color: @black;
+    margin-bottom: 20px;
   }
 
   .presentation__controls {
-    align-items: center;
-    width: 648px;
-    height: 90px;
-    padding: 0;
-    background-color: @transparent-black;
+    width: 100%;
+    height: 92px;
+    bottom: 0;
   }
 
-  .presentation__controls-button--replay,
-  .presentation__controls-button--subtitles,
-  .presentation__controls-button--fullscreen {
+  .presentation__input {
+    justify-content: flex-start;
+    height: 100%;
+    padding-left: 93px;
+  }
+
+  .presentation__input--range {
+    width: 390px;
+  }
+
+  .presentation__buttons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 40px;
+    height: 100%;
+    background-color: transparent;
+  }
+
+  .presentation__button:first-of-type {
+    margin-right: 440px;
+  }
+
+  .presentation__button:last-of-type {
+    margin-left: 24px;
+  }
+
+  .presentation__button--replay,
+  .presentation__button--subtitles,
+  .presentation__button--fullscreen {
     fill: @white;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .presentation__video {
-    margin: 0 200px;
+  .presentation__description {
+    padding-left: 360px;
+    padding-right: 360px;
   }
 
-  .presentation__video--window {
+  .presentation__video {
     width: 800px;
     height: 500px;
+    margin-bottom: 70px;
   }
 
-  .presentation__controls {
-    width: 800px;
+  .presentation__input--range {
+    width: 540px;
+  }
+
+  .presentation__button:first-of-type {
+    margin-right: 590px;
   }
 }
