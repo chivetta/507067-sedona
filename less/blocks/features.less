@@ -6,7 +6,8 @@
 }
 
 .feature__title {
-  margin: 14px 0;
+  margin-top: 12px;
+  margin-bottom: 9px;
   .text-title;
 }
 
@@ -15,6 +16,8 @@
 }
 
 .feature__text {
+  margin-top: 15px;
+  margin-bottom: 20px;
   .text-paragraph;
 }
 
@@ -24,6 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 7px;
   color: @white;
   background-color: @main-blue;
 }
@@ -69,6 +73,19 @@
   text-align: left;
 }
 
+.feature-list__item .feature__text {
+  margin-top: 14px;
+  margin-bottom: 19px;
+}
+
+.feature-list__item--food .feature__title {
+  margin-top: 10px;
+}
+
+.feature-list__item--food .feature__text {
+  margin-bottom: 16px;
+}
+
 .feature-list__item--home::before {
   content: "";
   position: absolute;
@@ -84,7 +101,7 @@
 .feature-list__item--souvenir::before {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 0;
   left: 1px;
   width: 40px;
   height: 40px;
@@ -96,8 +113,8 @@
 .feature-list__item--food::before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 1px;
+  top: 2px;
+  left: -1px;
   width: 40px;
   height: 40px;
   background-image: url("../img/icon-burger.svg");
@@ -115,7 +132,10 @@
 }
 
 .feature--additional .feature__item {
-  padding: 12px 15px;
+  padding-top: 15px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .feature--additional .feaure__title {
@@ -154,6 +174,12 @@
   }
 
   .feature__photo {
+    width: 512px;
+    height: 256px;
+    flex-grow: 1;
+  }
+
+  .feature__photo img {
     width: 512px;
     height: 256px;
   }
@@ -235,5 +261,13 @@
     width: 77px;
     height: 77px;
     background-size: 77px 77px;
+  }
+
+  .feature__photo {
+    width: 800px;
+  }
+
+  .feature__photo img {
+    width: 800px;
   }
 }
