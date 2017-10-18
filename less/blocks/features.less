@@ -21,6 +21,10 @@
   .text-paragraph;
 }
 
+.feature__text br {
+  display: none;
+}
+
 /*Главные особенности*/
 
 .feature--main {
@@ -148,9 +152,14 @@
 
 @media (min-width: @tablet-width) {
   .feature__title {
-    padding: 0 5px;
+    padding: 0 8px;
     font-size: 21px;
     line-height: 26px;
+  }
+
+  .feature__text {
+    margin-top: 22px;
+    margin-bottom: 13px;
   }
 
   .feature--main .feature__item,
@@ -171,6 +180,7 @@
   .feature--main {
     flex-direction: row;
     align-items: center;
+    padding-top: 0;
   }
 
   .feature__photo {
@@ -200,12 +210,13 @@
     padding-top: 130px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
     text-align: center;
   }
 
   .feature-list__item .feature__title {
-    margin-bottom: 20px;
+    margin-top: 9px;
+    margin-bottom: 21px;
   }
 
   .feature-list__item--souvenir {
@@ -213,9 +224,16 @@
   }
 
   .feature-list__item--home::before,
-  .feature-list__item--souvenir::before,
-  .feature-list__item--food::before {
+  .feature-list__item--souvenir::before {
     top: 36px;
+    left: 89px;
+    width: 77px;
+    height: 77px;
+    background-size: 77px 77px;
+  }
+
+  .feature-list__item--food::before {
+    top: 38px;
     left: 89px;
     width: 77px;
     height: 77px;
@@ -232,6 +250,14 @@
 
   .feature--additional .feature__item:not(:last-of-type) {
     border-bottom: none;
+  }
+
+  .feature--additional .feature__text:nth-last-of-type(2) {
+    padding: 0 5px;
+  }
+
+  .feature__text br {
+    display: inline;
   }
 }
 

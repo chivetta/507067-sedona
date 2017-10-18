@@ -1,6 +1,6 @@
 .heading {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .heading__title {
@@ -14,4 +14,21 @@
   margin-top: 0;
   margin-bottom: 5px;
   .text-label;
+}
+
+@media (min-width: @tablet-width) {
+  .heading {
+    padding: 30px 120px;
+    margin-bottom: 0;
+  }
+
+  .heading__title {
+    margin-top: 20px;
+    margin-bottom: 29px;
+    .text-big-title;
+  }
+
+  .heading__text {
+    margin-bottom: 20px;
+  }
 }

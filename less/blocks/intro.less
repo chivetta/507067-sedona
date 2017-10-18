@@ -41,33 +41,29 @@
   left: 0;
   display: block;
   width: 100%;
-  height: 27px;
+  height: 100px;
   background-image: url("../img/bg-intro-triangle-mobile.svg");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 322px 27px;
+  background-size: 105% auto;
 }
 
 @media (min-width: @tablet-width) {
-  .intro {
-    padding-bottom: 20px;
-  }
-
-  .intro__slogan--welcome {
+  .intro__welcome {
     min-width: 460px;
     min-height: 350px;
-    margin-top: 25px;
+    margin-top: 27px;
     margin-bottom: 25px;
   }
 
-  .intro__slogan--sedona {
+  .intro__sedona {
     min-width: 460px;
     min-height: 80px;
     margin-top: 45px;
     margin-bottom: 55px;
   }
 
-  .intro__description {
+  /*.intro__description {
     padding: 30px 120px;
     margin-bottom: 0;
   }
@@ -85,15 +81,22 @@
     margin-top: 40px;
     margin-bottom: 30px;
     font-size: 30px;
-  }
+  }*/
 }
 
 @media (min-width: @desktop-width) {
-  .intro__description {
+  .intro__sedona {
+    min-width: 460px;
+    min-height: 80px;
+    margin-top: 52px;
+    margin-bottom: 55px;
+  }
+
+  /*.intro__description {
     padding: 30px 380px;
   }
 
-  .intro__slogan--sedona {
+  .intro__sedona {
     min-width: 460px;
     min-height: 80px;
     margin-top: 52px;
@@ -102,5 +105,5 @@
 
   .intro__description-title--big {
     margin-top: 80px;
-  }
+  }*/
 }
