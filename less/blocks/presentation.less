@@ -13,10 +13,10 @@
 }
 
 .presentation__title {
-  .text-title;
   margin-top: 12px;
-  margin-bottom: 25px;
-}
+  margin-bottom: 28px;
+  .text-title;
+  }
 
 .presentation__text {
   padding: 0 10px;
@@ -31,7 +31,7 @@
   height: 201px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 90px;
+  margin-bottom: 85px;
   background-color: @middle-grey;
   background-image: url("../img/video-mobile@1x.jpg");
   background-position: center;
@@ -67,7 +67,6 @@
   justify-content: space-between;
   align-items: center;
   height: 66px;
-  padding: 0 20px;
   background-color: @light-grey;
 }
 
@@ -79,7 +78,13 @@
 }
 
 .presentation__button:first-of-type {
-  margin-right: 100px;
+  margin-left: 25px;
+  margin-right: 133px;
+}
+
+.presentation__button:last-of-type {
+  margin-left: 31px;
+  margin-right: 23px;
 }
 
 @media (min-width: @tablet-width) {
@@ -133,9 +138,7 @@
   }
 
   .presentation__button:last-of-type {
-    margin-left: 31px;
     margin-right: 42px;
-
   }
 
   .presentation__button--replay,
