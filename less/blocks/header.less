@@ -33,29 +33,53 @@
   background-color: @main-blue;
 }
 
+/*кнопка открытия-закрытия меню*/
+
 .header__nav-toggle {
   position: absolute;
   z-index: 2;
   display: block;
-  width: 23px;
-  height: 23px;
+  width: 56px;
+  height: 56px;
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 23px 23px;
   border: none;
 
   &--closed {
-    bottom: -39px;
-    right: 20px;
-    background-image: url("../img/icon-menu.svg");
+    bottom: -56px;
+    right: 5px;
   }
 
   &--opened {
-    top: 16px;
-    right: 20px;
-    background-image: url("../img/icon-cross.svg");
+    top: 0;
+    right: 5px;
   }
 }
+
+/*.header__nav-button {
+  &--closed {
+    display: block;
+    transform: translateX(50%);
+    fill: #81b3d2;
+  }
+
+  &--opened {
+    display: none;
+  }
+} /*закрытое меню*/
+
+.header__nav-button {
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+    transform: translateX(50%);
+    fill: #ffffff;
+  }
+} /*открытое меню*/
 
 @media (min-width: @tablet-width) {
   .header {
