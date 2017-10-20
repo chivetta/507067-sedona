@@ -56,9 +56,21 @@
 
 @media (min-width: @tablet-width) {
   .fullname {
+    position: relative;
     width: 266px;
     padding-left: 58px;
     text-align: left;
+  }
+
+  .fullname::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -1px;
+    top: 20px;
+    width: 1px;
+    height: 292px;
+    background-color: #dbdbdb;
   }
 
   .fullname__title {
@@ -77,12 +89,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .fullname {
+    width: 400px;
+    padding-left: 80px;
+  }
+
   .fullname__input--name {
-    width: 320px;
+    width: 325px;
   }
 
   .fullname__input--surname,
   .fullname__input--patronymic {
-    width: 283px;
+    width: 288px;
   }
 }

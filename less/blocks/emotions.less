@@ -32,13 +32,55 @@
   }
 
   .emotions__title {
-    margin-top: 35px;
+    position: relative;
+    display: block;
+    width: 648px;
+    margin-top: 34px;
     margin-bottom: 57px;
     font-size: 21px;
+  }
+
+  .emotions__title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .emotions__title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: block;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
   }
 
   .emotions__text {
     width: 600px;
     padding-top: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotions__title {
+    width: 960px;
+  }
+
+  .emotions__title::before,
+  .emotions__title::after {
+    width: 280px;
+  }
+
+  .emotions__text {
+    width: 912px;
   }
 }
