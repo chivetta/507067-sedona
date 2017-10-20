@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-
     <header class="header">
       <nav class="header__nav">
         <button class="header__nav-toggle header__nav-toggle--closed header__nav-toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -28,9 +27,11 @@
     </header>
 
     <main class="container">
+
       <div class="intro">
           <div class="intro__sedona"></div>
       </div>
+
       <div class="opening">
         <h1 class="opening__title opening__title--form">Оставьте свой отзыв</h1>
         <p class="opening__text opening__text--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -38,86 +39,86 @@
 
       <form class="review-form" method="post" action="https://echo.htmlacademy.ru">
 
-        <div class="review-form__section review-form__section--fullname">
-          <h2 class="review-form__title">Представьтесь:</h2>
-          <div class="review-form__item review-form__item--name">
-            <label class="review-form__label" for="name">Имя*: </label>
-            <input class="review-form__input input__name" type="text" id="name" name="name" placeholder="Петр" required>
+        <div class="review-form__section fullname">
+          <h2 class="fullname__title">Представьтесь:</h2>
+          <div class="fullname__item">
+            <label class="fullname__label" for="name">Имя*: </label>
+            <input class="fullname__input fullname__input--name" type="text" id="name" name="name" placeholder="Петр" required>
           </div>
-          <div class="review-form__item review-form__item--name">
-            <label class="review-form__label" for="surname">Фамилия*: </label>
-            <input class="review-form__input input__surname" type="text" id="surname" name="surname" placeholder="Иванов" required>
+          <div class="fullname__item">
+            <label class="fullname__label" for="surname">Фамилия*: </label>
+            <input class="fullname__input fullname__input--surname" type="text" id="surname" name="surname" placeholder="Иванов" required>
           </div>
-          <div class="review-form__item review-form__item--name">
-            <label class="review-form__label" for="patronymic">Отчество: </label>
-            <input class="review-form__input input__patronymic" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
-          </div>
-        </div>
-
-        <div class="review-form__section review-form__section--contact-info">
-          <h2 class="review-form__title">Контактная информация:</h2>
-          <div class="review-form__item review-form__item--contact-info">
-            <label class="review-form__label" for="phone"><span>Контактный </span>телефон*: </label>
-            <div class="review-form__input-wrapper">
-              <input class="review-form__input input__phone" type="tel" id="phone" name="tel" placeholder="Введите телефон" required>
-              <div class="input__icon--phone"></div>
-            </div>
-          </div>
-          <div class="review-form__item review-form__item--contact-info">
-            <label class="review-form__label" for="email">Электронная почта*: </label>
-            <div class="review-form__input-wrapper">
-              <input class="review-form__input input__email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
-              <div class="input__icon--email"></div>
-            </div>
+          <div class="fullname__item">
+            <label class="fullname__label" for="patronymic">Отчество: </label>
+            <input class="fullname__input fullname__input--patronymic" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
           </div>
         </div>
 
-        <div class="review-form__section review-form__section--insperation">
-          <h2 class="review-form__title">Ваше общее впечатление:</h2>
-          <div class="review-form__item">
-            <input class="review-form__input input__radio" type="radio" id="radio-good" name="radio" value="good" checked>
-            <label class="review-form__label review-form__label--radio" for="radio-good">Скорее положительное</label>
-          </div>
-          <div class="review-form__item">
-            <input class="review-form__input input__radio" type="radio" id="radio-bad" name="radio" value="bad">
-            <label class="review-form__label review-form__label--radio" for="radio-bad">Скорее отрицательное</label>
-          </div>
-          <div class="review-form__item">
-            <input class="review-form__input input__radio" type="radio" id="radio-neutral" name="radio" value="neutral">
-            <label class="review-form__label review-form__label--radio" for="radio-neutral">Затрудняюсь ответить</label>
-          </div>
-        </div>
-
-        <div class="review-form__section review-form__section--sight">
-          <h2 class="review-form__title">Посещенные достопримечательности:</h2>
-          <div class="review-form__column-wrapper">
-            <div class="review-form__column">
-              <div class="review-form__item">
-                <input class="review-form__input input__checkbox" type="checkbox" id="checkbox-bridge" name="bridge" checked>
-                <label class="review-form__label review-form__label--checkbox" for="checkbox-bridge">Мост Дьявола</label>
-              </div>
-              <div class="review-form__item">
-                <input class="review-form__input input__checkbox" type="checkbox" id="checkbox-park" name="park" checked>
-                <label class="review-form__label review-form__label--checkbox" for="checkbox-park">Слайд-парк</label>
-              </div>
+        <div class="review-form__section contact-info">
+          <h2 class="contact-info__title">Контактная информация:</h2>
+          <div class="contact-info__item">
+            <label class="contact-info__label" for="phone"><span>Контактный </span>телефон*: </label>
+            <div class="contact-info__input-wrapper">
+              <input class="contact-info__input" type="tel" id="phone" name="tel" placeholder="Введите телефон" required>
+              <div class="contact-info__icon contact-info__icon--phone"></div>
             </div>
-            <div class="review-form__column">
-              <div class="review-form__item">
-                <input class="review-form__input input__checkbox" type="checkbox" id="checkbox-mountain" name="mountain">
-                <label class="review-form__label review-form__label--checkbox" for="checkbox-mountain">Гора-колокол</label>
-              </div>
-              <div class="review-form__item">
-                <input class="review-form__input input__checkbox" type="checkbox" id="сheckbox-rocks" name="rocks" checked>
-                <label class="review-form__label review-form__label--checkbox" for="сheckbox-rocks">Красные скалы</label>
-              </div>
+          </div>
+          <div class="contact-info__item">
+            <label class="contact-info__label" for="email">Электронная почта*: </label>
+            <div class="contact-info__input-wrapper">
+              <input class="contact-info__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+              <div class="contact-info__icon contact-info__icon--email"></div>
             </div>
           </div>
         </div>
 
-        <div class="review-form__section review-form__section--emotions">
-          <h2 class="review-form__title">Опишите свои эмоции:</h2>
-          <div class="review-form__item">
-          <textarea class="review-form__text" name="essay" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+        <div class="review-form__section inspiration">
+          <h2 class="inspiration__title">Ваше общее впечатление:</h2>
+          <div class="inspiration__item">
+            <input class="inspiration__input" type="radio" id="radio-good" name="radio" value="good" checked>
+            <label class="inspiration__label" for="radio-good">Скорее положительное</label>
+          </div>
+          <div class="inspiration__item">
+            <input class="inspiration__input" type="radio" id="radio-bad" name="radio" value="bad">
+            <label class="inspiration__label" for="radio-bad">Скорее отрицательное</label>
+          </div>
+          <div class="inspiration__item">
+            <input class="inspiration__input" type="radio" id="radio-neutral" name="radio" value="neutral">
+            <label class="inspiration__label" for="radio-neutral">Затрудняюсь ответить</label>
+          </div>
+        </div>
+
+        <div class="review-form__section sight">
+          <h2 class="sight__title">Посещенные достопримечательности:</h2>
+          <div class="sight__column-wrapper">
+            <div class="sight__column">
+              <div class="sight__item">
+                <input class="sight__input" type="checkbox" id="checkbox-bridge" name="bridge" checked>
+                <label class="sight__label" for="checkbox-bridge">Мост Дьявола</label>
+              </div>
+              <div class="sight__item">
+                <input class="sight__input" type="checkbox" id="checkbox-park" name="park" checked>
+                <label class="sight__label" for="checkbox-park">Слайд-парк</label>
+              </div>
+            </div>
+            <div class="sight__column">
+              <div class="sight__item">
+                <input class="sight__input" type="checkbox" id="checkbox-mountain" name="mountain">
+                <label class="sight__label" for="checkbox-mountain">Гора-колокол</label>
+              </div>
+              <div class="sight__item">
+                <input class="sight__input" type="checkbox" id="сheckbox-rocks" name="rocks" checked>
+                <label class="sight__label" for="сheckbox-rocks">Красные скалы</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-form__section emotions">
+          <h2 class="emotions__title">Опишите свои эмоции:</h2>
+          <div class="emotions__item">
+          <textarea class="emotions__text" name="essay" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
         </div>
 
@@ -126,6 +127,7 @@
           <div class="review-form__required">* - обязательные поля</div>
         </div>
       </form>
+
     </main>
 
     <footer class="footer">
