@@ -53,3 +53,36 @@
   margin-left: 4px;
   width: 169px;
 }
+
+@media (min-width: @tablet-width) {
+  .fullname {
+    width: 266px;
+    padding-left: 58px;
+    text-align: left;
+  }
+
+  .fullname__title {
+    margin-bottom: 57px;
+    font-size: 21px;
+  }
+
+  .fullname__input--name {
+    width: 191px;
+  }
+
+  .fullname__input--surname,
+  .fullname__input--patronymic {
+    width: 154px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fullname__input--name {
+    width: 320px;
+  }
+
+  .fullname__input--surname,
+  .fullname__input--patronymic {
+    width: 283px;
+  }
+}

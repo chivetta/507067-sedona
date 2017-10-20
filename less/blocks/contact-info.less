@@ -71,3 +71,37 @@
     background-size: 16px 20px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 648px;
+  }
+
+  .contact-info__title {
+    align-self: center;
+    margin-top: 37px;
+    margin-bottom: 24px;
+    font-size: 21px;
+  }
+
+  .contact-info__item {
+    padding-bottom: 23px;
+  }
+
+  .contact-info__label {
+    padding-left: 21px;
+  }
+
+  .contact-info__input {
+    width: 566px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .contact-info__input {
+    width: 249px;
+  }
+}
