@@ -175,11 +175,7 @@
     width: 512px;
     height: 256px;
     flex-grow: 1;
-  }
-
-  .feature__photo img {
-    width: 512px;
-    height: 256px;
+    overflow: hidden;
   }
 
   .feature__photo--bridge {
@@ -246,20 +242,28 @@
     display: inline;
   }
 
-  .feature__br--desk-only {
+  .feature__br--desk {
     display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .feature__title {
-    padding: 0 65px;
+    padding: 0 60px;
   }
 
   .feature--main .feature__item,
   .feature--additional .feature__item {
     width: 280px;
     padding: 0 60px;
+  }
+
+  .feature__photo--street img {
+    transform: translateY(-18%);
+  }
+
+  .feature__photo--bridge img {
+    transform: translateY(-15%);
   }
 
   .feature-list__item {
@@ -273,14 +277,6 @@
   .feature-list__icon--souvenir,
   .feature-list__icon--food {
     left: 161px;
-  }
-
-  .feature__photo {
-    width: 800px;
-  }
-
-  .feature__photo img {
-    width: 800px;
   }
 
   .feature--additional {
@@ -297,7 +293,7 @@
     display: none;
   }
 
-  .feature__br--desk-only {
+  .feature__br--desk {
     display: inline;
   }
 }
