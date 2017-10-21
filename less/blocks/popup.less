@@ -1,8 +1,8 @@
 /*Поп-ап*/
 
-.popup {
+/*.popup {
   display: none;
-}
+}*/
 
 .popup__success {
   position: absolute;
@@ -38,25 +38,30 @@
 }
 
 .popup__success .popup__accept {
+  display: block;
+  height: 58px;
   margin-top: 35px;
+  padding: 20px;
   background-color: @light-grey;
 }
 
 .popup__button {
-  height: 58px;
+  display: block;
+  height: 24px;
   margin: 0 auto;
+  padding: 16px 0;
+  text-decoration: none;
+  vertical-align: middle;
+  .text-paragraph;
   .button-style;
 
   &--success {
     width: 280px;
-    font-size: 18px;
-    margin: 20px auto;
   }
 
   &--fail {
     width: 180px;
     margin-bottom: 35px;
-    font-size: 18px;
   }
 }
 
@@ -77,6 +82,9 @@
     box-shadow: 0 0 15px 0 @middle-grey;
   }
 
+  .popup__success .popup__accept {
+    padding: 44px;
+  }
 
   .popup__fail {
     left: 50%;
@@ -96,12 +104,11 @@
 
   .popup__button--success {
     width: 458px;
-    margin: 44px auto;
   }
 
   .popup__button--fail {
     width: 272px;
-    margin-top: 10px;
+    margin-top: 32px;
     margin-bottom: 49px;
   }
 }
