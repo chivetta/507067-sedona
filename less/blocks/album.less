@@ -1,21 +1,9 @@
+/*Фотоальбом*/
+
 .album {
   display: flex;
   flex-direction: column;
-}
-
-.album-post {
-  padding: 22px 20px;
-  border-top: @border;
-}
-
-.album-post:last-of-type {
-  border-bottom: @border;
-}
-
-.album-post__photo {
-  width: 280px;
-  height: 280px;
-  margin: auto;
+  margin-top: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -24,41 +12,10 @@
     flex-wrap: wrap;
     padding: 0 60px;
   }
-
-  .album-post {
-    padding: 0;
-    border-top: none;
-  }
-
-  .album-post:last-of-type {
-    border-bottom: none;
-  }
-
-  .album-post__photo--main {
-    width: 648px;
-    height: 400px;
-    background-color: chocolate;
-  }
-
-  .album-post__photo--other {
-    width: 324px;
-    height: 267px;
-    background-color: burlywood;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .album {
     padding: 0;
-  }
-
-  .album-post__photo--main {
-    width: 1200px;
-  }
-
-  .album-post__photo--other {
-    width: 400px;
-    height: 267px;
-    background-color: burlywood;
   }
 }
