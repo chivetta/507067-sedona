@@ -13,15 +13,19 @@
   </head>
   <body>
 
+    <div style="display:none">
+      <include src="img/sprite.svg"></include>
+    </div>
+
     <div class="shadow-box">
       <header class="header">
         <nav class="header__nav">
           <button class="header__nav-toggle header__nav-toggle--opened" type="button">
             <svg class="header__nav-button header__nav-button--closed" width="22" height="23">
-              <use xlink:href="img/sprite.svg#icon-menu"></use>
+              <use xlink:href="#icon-menu"></use>
             </svg>
             <svg class="header__nav-button header__nav-button--opened" width="22" height="22">
-              <use xlink:href="img/sprite.svg#icon-cross"></use>
+              <use xlink:href="#icon-cross"></use>
             </svg>
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -64,9 +68,9 @@
             </div>
             <div class="feature__photo feature__photo--street">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-                <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="улицы Седоны">
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                <img src="img/main-city-mobile@1x.webp" srcset="img/main-city-mobile@2x.webp 2x" alt="улицы Седоны">
               </picture>
             </div>
           </div>
@@ -74,20 +78,20 @@
           <ul class="feature feature-list">
             <li class="feature-list__item feature-list__item--home">
               <svg class="feature-list__icon feature-list__icon--home" width="74.695" height="72.346">
-                <use xlink:href="img/sprite.svg#icon-house"></use>
+                <use xlink:href="#icon-house"></use>
               </svg>
                 <h2 class="feature__title">Жилье</h2>
                 <p class="feature__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="feature-list__item feature-list__item--souvenir">
               <svg class="feature-list__icon feature-list__icon--souvenir" width="63" height="75.084">
-                <use xlink:href="img/sprite.svg#icon-gift"></use>
+                <use xlink:href="#icon-gift"></use>
               </svg>
               <h2 class="feature__title">Сувениры</h2>
               <p class="feature__text">Не только китайского, <br class="feature__br">но и местного производства!</p>
             <li class="feature-list__item feature-list__item--food">
               <svg class="feature-list__icon feature-list__icon--food" width="76.166" height="68.959">
-                <use xlink:href="img/sprite.svg#icon-burger"></use>
+                <use xlink:href="#icon-burger"></use>
               </svg>
               <h2 class="feature__title">Еда</h2>
               <p class="feature__text">Всегда заказывайте фирменный бургер, <br class="feature__br">вы не разочаруетесь!</p>
@@ -102,9 +106,9 @@
             </div>
             <div class="feature__photo feature__photo--bridge">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
-                <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="улицы Седоны">
+                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+                <img src="img/main-bridge-mobile@1x.webp" srcset="img/main-bridge-mobile@2x.webp 2x" alt="улицы Седоны">
               </picture>
             </div>
           </div>
@@ -148,19 +152,19 @@
         <div class="footer__social">
           <a class="footer__social-link" href="https://twitter.com/htmlacademy_ru">
             <svg class="footer__twitter" width="17.5" height="14.66">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
             <span class="visually-hidden">Twitter</span>
           </a>
           <a class="footer__social-link" href="https://facebook.com/htmlacademy">
             <svg class="footer__facebook" width="8.672" height="18.944">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
             <span class="visually-hidden">Facebook</span>
           </a>
           <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
             <svg class="footer__youtube" width="19.979" height="14.015">
-              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              <use xlink:href="#icon-youtube"></use>
             </svg>
             <span class="visually-hidden">Youtube</span>
           </a>
@@ -169,7 +173,7 @@
           <span>Разработано </span>
           <a class="footer__logotype" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="footer__logotype-icon" width="26.943" height="34.09">
-              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+              <use xlink:href="#icon-htmlacademy"></use>
             </svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>

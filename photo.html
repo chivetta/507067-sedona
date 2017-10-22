@@ -13,15 +13,19 @@
   </head>
   <body>
 
+    <div style="display:none">
+      <include src="img/sprite.svg"></include>
+    </div>
+
     <div class="shadow-box">
       <header class="header">
         <nav class="header__nav">
           <button class="header__nav-toggle header__nav-toggle--opened" type="button">
             <svg class="header__nav-button header__nav-button--closed" width="22" height="23">
-              <use xlink:href="img/sprite.svg#icon-menu"></use>
+              <use xlink:href="#icon-menu"></use>
             </svg>
             <svg class="header__nav-button header__nav-button--opened" width="22" height="22">
-              <use xlink:href="img/sprite.svg#icon-cross"></use>
+              <use xlink:href="#icon-cross"></use>
             </svg>
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -62,9 +66,9 @@
             <div class="album-post__photo album-post__photo--main">
               <a href="#">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-                  <img src="./img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
+                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+                  <img src="./img/photo-sunset-mobile@1x.webp" srcset="img/photo-sunset-mobile@2x.webp 2x" alt="Неродные просторы">
                 </picture>
               </a>
             </div>
@@ -73,7 +77,7 @@
               <p class="description__author">Автор фото: Борис</p>
               <div class="description__like">
                 <svg class="description__icon" width="22" height="20">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
                 <span class="visually-hidden">Like</span><span>1350</span>
               </div>
@@ -84,9 +88,9 @@
             <div class="album-post__photo album-post__photo--other">
               <a href="#">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
-                  <img src="./img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+                  <img src="./img/photo-cactus-mobile@1x.webp" srcset="img/photo-cactus-mobile@2x.webp 2x" alt="Местная растительность">
                 </picture>
               </a>
             </div>
@@ -95,7 +99,7 @@
               <p class="description__author">Автор фото: Сергей</p>
               <div class="description__like">
                 <svg class="description__icon" width="22" height="20">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
                 <span class="visually-hidden">Like</span><span>143</span>
               </div>
@@ -106,9 +110,9 @@
             <div class="album-post__photo album-post__photo--other">
               <a href="#">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
-                  <img src="./img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+                  <img src="./img/photo-roads-mobile@1x.webp" srcset="img/photo-roads-mobile@2x.webp 2x" alt="Дорога на север">
                 </picture>
               </a>
             </div>
@@ -117,7 +121,7 @@
               <p class="description__author">Автор фото: Петр</p>
               <div class="description__like">
                 <svg class="description__icon" width="22" height="20">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
                 <span class="visually-hidden">Like</span><span>96</span>
               </div>
@@ -128,9 +132,9 @@
             <div class="album-post__photo album-post__photo--other">
               <a href="#">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridgetablet@2x.jpg 2x">
-                  <img src="./img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridgetablet@2x.webp 2x">
+                  <img src="./img/photo-bridge-mobile@1x.webp" srcset="img/photo-bridge-mobile@2x.webp 2x" alt="Мост Дьявола">
                 </picture>
               </a>
             </div>
@@ -139,7 +143,7 @@
               <p class="description__author">Автор фото: Антон</p>
               <div class="description__like">
                 <svg class="description__icon" width="22" height="20">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
                 <span class="visually-hidden">Like</span><span>254</span>
               </div>
@@ -163,19 +167,19 @@
               <div class="presentation__buttons">
                 <button class="presentation__button" type="button">
                   <svg class="presentation__replay" width="16" height="20">
-                    <use xlink:href="img/sprite.svg#icon-video-replay"></use>
+                    <use xlink:href="#icon-video-replay"></use>
                   </svg>
                   <span class="visually-hidden">Повтор</span>
                 </button>
                 <button class="presentation__button" type="button">
                   <svg class="presentation__subtitles" width="32" height="20">
-                    <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+                    <use xlink:href="#icon-video-subtitles"></use>
                   </svg>
                   <span class="visually-hidden">Субтитры</span>
                 </button>
                 <button class="presentation__button" type="button">
                   <svg class="presentation__fullscreen" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+                    <use xlink:href="#icon-video-fullscreen"></use>
                   </svg>
                   <span class="visually-hidden">Полноэкранная версия</span>
                 </button>
@@ -192,19 +196,19 @@
         <div class="footer__social">
           <a class="footer__social-link" href="https://twitter.com/htmlacademy_ru">
             <svg class="footer__twitter" width="17.5" height="14.66">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
             <span class="visually-hidden">Twitter</span>
           </a>
           <a class="footer__social-link" href="https://facebook.com/htmlacademy">
             <svg class="footer__facebook" width="8.672" height="18.944">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
             <span class="visually-hidden">Facebook</span>
           </a>
           <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
             <svg class="footer__youtube" width="19.979" height="14.015">
-              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              <use xlink:href="#icon-youtube"></use>
             </svg>
             <span class="visually-hidden">Youtube</span>
           </a>
@@ -213,7 +217,7 @@
           <span>Разработано </span>
           <a class="footer__logotype" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="footer__logotype-icon" width="26.943" height="34.09">
-              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+              <use xlink:href="#icon-htmlacademy"></use>
             </svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>

@@ -13,15 +13,19 @@
   </head>
   <body>
 
+    <div style="display:none">
+      <include src="img/sprite.svg"></include>
+    </div>
+
     <div class="shadow-box">
       <header class="header">
         <nav class="header__nav">
           <button class="header__nav-toggle header__nav-toggle--opened" type="button">
             <svg class="header__nav-button header__nav-button--closed" width="22" height="23">
-              <use xlink:href="img/sprite.svg#icon-menu"></use>
+              <use xlink:href="#icon-menu"></use>
             </svg>
             <svg class="header__nav-button header__nav-button--opened" width="22" height="22">
-              <use xlink:href="img/sprite.svg#icon-cross"></use>
+              <use xlink:href="#icon-cross"></use>
             </svg>
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -171,19 +175,19 @@
         <div class="footer__social">
           <a class="footer__social-link" href="https://twitter.com/htmlacademy_ru">
             <svg class="footer__twitter" width="17.5" height="14.66">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
           <span class="visually-hidden">Twitter</span>
           </a>
           <a class="footer__social-link" href="https://facebook.com/htmlacademy">
             <svg class="footer__facebook" width="8.672" height="18.944">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
           <span class="visually-hidden">Facebook</span>
           </a>
           <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
             <svg class="footer__youtube" width="19.979" height="14.015">
-              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              <use xlink:href="#icon-youtube"></use>
             </svg>
           <span class="visually-hidden">Youtube</span>
           </a>
@@ -192,7 +196,7 @@
           <span>Разработано </span>
           <a class="footer__logotype" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="footer__logotype-icon" width="26.943" height="34.09">
-              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+              <use xlink:href="#icon-htmlacademy"></use>
             </svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>
