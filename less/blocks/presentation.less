@@ -62,7 +62,7 @@
   height: 45px;
 }
 
-.presentation__input--range {
+.presentation__range {
   width: 236px;
 }
 
@@ -89,6 +89,24 @@
 .presentation__button:last-of-type {
   margin-left: 31px;
   margin-right: 23px;
+}
+
+.presentation__replay,
+.presentation__subtitles,
+.presentation__fullscreen {
+  fill: #5c6870;
+}
+
+.presentation__replay:hover,
+.presentation__subtitles:hover,
+.presentation__fullscreen:hover {
+  fill: @dark-grey;
+}
+
+.presentation__replay:active,
+.presentation__subtitles:active,
+.presentation__fullscreen:active {
+  fill: #c1c1c1;
 }
 
 @media (min-width: @tablet-width) {
@@ -128,7 +146,7 @@
     padding-left: 93px;
   }
 
-  .presentation__input--range {
+  .presentation__range {
     width: 390px;
   }
 
@@ -151,9 +169,9 @@
     margin-right: 42px;
   }
 
-  .presentation__button--replay,
-  .presentation__button--subtitles,
-  .presentation__button--fullscreen {
+  .presentation__replay,
+  .presentation__subtitles,
+  .presentation__fullscreen {
     fill: @white;
   }
 }
@@ -181,7 +199,7 @@
     }
   }
 
-  .presentation__input--range {
+  .presentation__range {
     width: 540px;
   }
 

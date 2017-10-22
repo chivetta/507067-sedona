@@ -36,5 +36,9 @@
   ],
   "engines": {
     "node": "8.2"
+  },
+  "dependencies": {
+    "gulp-rename": "^1.2.2",
+    "gulp-svgstore": "^6.1.0"
   }
 }
