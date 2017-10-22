@@ -55,15 +55,30 @@
   background-color: @transparent-black;
 }
 
-.presentation__input {
+.presentation__duration {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 45px;
 }
 
-.presentation__input--range {
+.presentation__line {
+  position: relative;
+  display: block;
   width: 236px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.presentation__line::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 37px;
+  width: 9px;
+  height: 9px;
+  background-color: @white;
+  border-radius: 50%;
 }
 
 .presentation__buttons {
@@ -89,6 +104,24 @@
 .presentation__button:last-of-type {
   margin-left: 31px;
   margin-right: 23px;
+}
+
+.presentation__replay,
+.presentation__subtitles,
+.presentation__fullscreen {
+  fill: #5c6870;
+}
+
+.presentation__replay:hover,
+.presentation__subtitles:hover,
+.presentation__fullscreen:hover {
+  fill: @dark-grey;
+}
+
+.presentation__replay:active,
+.presentation__subtitles:active,
+.presentation__fullscreen:active {
+  fill: #c1c1c1;
 }
 
 @media (min-width: @tablet-width) {
@@ -122,14 +155,18 @@
     bottom: 0;
   }
 
-  .presentation__input {
+  .presentation__duration {
     justify-content: flex-start;
     height: 100%;
     padding-left: 93px;
   }
 
-  .presentation__input--range {
+  .presentation__line {
     width: 390px;
+  }
+
+  .presentation__line::after {
+    left: 113px;
   }
 
   .presentation__buttons {
@@ -151,9 +188,9 @@
     margin-right: 42px;
   }
 
-  .presentation__button--replay,
-  .presentation__button--subtitles,
-  .presentation__button--fullscreen {
+  .presentation__replay,
+  .presentation__subtitles,
+  .presentation__fullscreen {
     fill: @white;
   }
 }
@@ -181,9 +218,10 @@
     }
   }
 
-  .presentation__input--range {
+  .presentation__line {
     width: 540px;
   }
+
 
   .presentation__button:first-of-type {
     margin-right: 624px;

@@ -1,6 +1,10 @@
 /*Меню*/
 
 .content-list {
+  background-color: @main-blue;
+}
+
+.content-list__menu {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -45,6 +49,14 @@
 
 @media (min-width: @tablet-width) {
   .content-list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: @white;
+  }
+
+  .content-list__menu {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -97,7 +109,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .content-list {
+  .content-list__menu {
     width: 1200px;
   }
 
