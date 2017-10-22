@@ -16,21 +16,21 @@ textarea {
   font-family: inherit;
 }
 
-.shadow-box {
-  display: block;
-  width: 320px;
+.shadow-box  {
+  min-width: 320px;
   margin: 0 auto;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .shadow-box {
-    width: 768px;
+    width: 100%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .shadow-box {
     width: 1200px;
+    margin: auto;
     box-shadow: 0 0 30px -5px @dark-grey;
   }
 }
