@@ -23,8 +23,8 @@
           </svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="header__nav-wrapper">
-          <ul class="content-list">
+        <div class="content-list">
+          <ul class="content-list__menu">
             <li class="content-list__item"><a class="content-list__link" href="./index.html">Главная</a></li>
             <li class="content-list__item"><a class="content-list__link" href="./photo.html">Фото и видео</a></li>
             <li class="content-list__item content-list__item--active">Форма отзыва</li>
@@ -48,7 +48,6 @@
       <div class="intro">
           <div class="intro__sedona"></div>
       </div>
-
       <div class="opening">
         <h1 class="opening__title opening__title--form">Оставьте свой отзыв</h1>
         <p class="opening__text opening__text--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, <br>а также о посещенных вами достопримечательностях</p>
@@ -109,7 +108,6 @@
         <div class="review-form__section sight">
           <h2 class="sight__title">Посещенные<br>достопримечательности:</h2>
           <div class="sight__column-wrapper">
-
               <div class="sight__item">
                 <input class="sight__input" type="checkbox" id="checkbox-bridge" name="bridge" checked>
                 <label class="sight__label" for="checkbox-bridge">Мост Дьявола</label>
@@ -126,7 +124,6 @@
                 <input class="sight__input" type="checkbox" id="сheckbox-rocks" name="rocks" checked>
                 <label class="sight__label" for="сheckbox-rocks">Красные скалы</label>
               </div>
-
           </div>
         </div>
 
@@ -143,7 +140,7 @@
         </div>
       </form>
 
-      <div class="popup popup__success">
+      <div class="popup popup--success">
         <div class="popup__block">
           <p class="popup__title">Ваш отзыв отправлен!</p>
           <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы опубликуем его на сайте.</p>
@@ -153,7 +150,7 @@
         </div>
       </div>
 
-      <div class="popup popup__fail">
+      <div class="popup popup--fail">
         <div class="popup__block">
           <p class="popup__title">Что-то пошло не так!</p>
           <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
