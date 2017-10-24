@@ -12,16 +12,28 @@
 }
 
 .review-form__submit {
-  margin-top: 25px;
-  padding-bottom: 16px;
+  margin-top: 21px;
+  padding-bottom: 11px;
 }
 
-.review-form__submit-button {
+.review-form__button--disable {
+  .button-disable;
+}
+
+.review-form__button {
   width: 280px;
   height: 58px;
   padding: 0;
   margin: 0 auto;
   .button-style;
+}
+
+.review-form__button:hover {
+  .button-hover;
+}
+
+.review-form__button:active {
+  .button-active;
 }
 
 .review-form__required {
@@ -51,10 +63,11 @@
     justify-content: space-between;
     align-items: center;
     width: 648px;
+    margin-top: 25px;
     padding-bottom: 60px;
   }
 
-  .review-form__submit-button {
+  .review-form__button {
     width: 324px;
     margin: 0;
   }
@@ -76,7 +89,7 @@
     padding-bottom: 66px;
   }
 
-  .review-form__submit-button {
+  .review-form__button {
     width: 480px;
   }
 }
