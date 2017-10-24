@@ -20,6 +20,16 @@
   resize: none;
   .text-title;
   .placeholder;
+
+  &:hover {
+    background-color: @grey;
+    border-color: @grey;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @white;
+  }
 }
 
 @media (min-width: @tablet-width) {
